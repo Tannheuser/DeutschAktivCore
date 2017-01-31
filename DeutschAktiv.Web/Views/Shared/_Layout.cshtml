@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Клуб немецкого языка Deutsch Aktiv.  Разговорный клуб немецкого языка в Москве."/>
+    <meta name="keywords" content="немецкий язык, изучение немецкого, разговорный клуб, клуб немецкого языка, мастер-класс, немецкий в москве, разговорный клуб в москве, выучить немецкий, курсы немецкого языка"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <title>@ViewData["Title"] - DeutschAktiv</title>
+
+    <link rel="stylesheet" media="screen" href="~/css/bootstrap.min.css" asp-append-version="true">
+    <link rel="stylesheet" media="screen" href="~/css/font-awesome.min.css" asp-append-version="true">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" media="screen" href="~/css/animate.min.css" asp-append-version="true">
+    <link rel="stylesheet" media="screen" href="~/css/prettyPhoto.css" asp-append-version="true">
+    <link rel="stylesheet" media="screen" href="~/css/main.css" asp-append-version="true">
+    <link rel="stylesheet" media="screen" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" media="screen" href="~/css/responsive.css" asp-append-version="true">
+</head>
+<body class="homepage">
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <img class="logo" src="~/img/logo.png" alt="logo" asp-append-version="true">
+                    <img class="logo-sm" src="~/img/logo2.png" alt="logo" asp-append-version="true">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a asp-action="about" asp-controller="home">Home</a>
+                    </li>
+                    <menulink controller-name="Education" action-name="ListClubs" menu-text="Разговорные клубы"></menulink>
+                    <menulink controller-name="Education" action-name="ListMasterClasses" menu-text="Мастер-классы"></menulink>
+                    <menulink controller-name="Education" action-name="ListCourses" menu-text="Курсы"></menulink>
+                    <menulink controller-name="Education" action-name="ShowSchedule" menu-text="Расписание"></menulink>
+                    <menulink controller-name="Home" action-name="About" menu-text="О нас"></menulink>
+                    <menulink controller-name="Home" action-name="Contacts" menu-text="Контакты"></menulink>
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+@RenderBody()
+
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                &copy; 2016 Deutsch Aktiv. Все права защищены.
+            </div>
+            <div class="col-sm-6">
+                <ul class="pull-right">
+                    <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">О нас</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer><!--/#footer-->
+
+<script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/jquery.isotope.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/wow.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

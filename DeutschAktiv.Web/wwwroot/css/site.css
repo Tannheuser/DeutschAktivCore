@@ -1,0 +1,298 @@
+#header {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.03), 0 1px 10px 0 rgba(0, 0, 0, 0.04);
+}
+
+textarea[name=message]{
+    resize: vertical;
+}
+
+.club:first-child {
+    margin-bottom: 20px;
+}
+
+.club-title {
+    text-align: left;
+}
+
+.club-title h1 {
+    margin: 0 0 10px 0;
+    color: #e24f43;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.club-title span {
+    color: #e24f43;
+    font-size: 16px;
+}
+
+.club-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.club-photo {
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+    padding-bottom: 40px;
+}
+
+.column {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+}
+
+.column img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.price-master h2 {
+    background: #c52d2f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.social {
+    text-align: left;
+}
+
+#bottom .social-share li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#bottom .social-share li a {
+    color: #fff;
+}
+
+#bottom .social-share li a:hover {
+    color: #fff;
+}
+
+ul.social-share li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.navbar-toggle {
+    padding: 12px 13px;
+    /*margin-top: 20px;*/
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.testimonial-inner img {
+    width: 98px;
+    height: 98px;
+}
+
+.media:first-child {
+    margin-top: 15px;
+}
+
+.feature-wrap {
+    margin-bottom: 20px;
+}
+
+.media-body h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*Schedule*/
+
+.height-watch {
+    display: flex;
+}
+
+#schedule .row {
+    background: #f5f5f5;
+    margin-bottom: 4px;
+}
+
+#schedule .row p{
+    padding-top: 10px;
+}
+
+.action-date {
+    background: #c52d2f;
+    color: #fff;
+    font-size: 20px;
+}
+
+.action-title, .action-date {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.action-details, .action-day, .action-teacher {
+    text-transform: uppercase;
+}
+
+.action-time, .action-place {
+    color: #c52d2f;
+}
+
+.action-price {
+    font-size: 14px;
+}
+
+.action-submit {
+    line-height: 80px;
+}
+
+.form-group.has-error .form-control {
+    border-color: #a94442;
+}
+
+#contact-page .contact-form .form-group.has-error label {
+    color: #a94442;
+}
+
+@media screen and (max-width: 990px) and (min-width: 770px) {
+    .action-title {
+        font-size: 14px;
+    }
+
+    .action-details, .action-day, .action-teacher {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .height-watch {
+        display: inherit;
+    }
+
+    .action-date {
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+    .action-submit {
+        margin-bottom: 10px;
+        line-height: inherit;
+    }
+
+    #schedule .row p{
+        text-align: center;
+    }
+
+    #schedule .row .btn {
+        padding-bottom: 10px;
+    }
+}
+
+
+/*--Schedule--*/
+
+@media screen and (max-width: 1200px) {
+    .gmap-area .map-content {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .club-title {
+        margin: 0 20px;
+    }
+
+    .gmap {
+        width: 350px;
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .gmap-area .map-content {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .gmap {
+        margin-top: 0px;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .club-title {
+        margin: 0 20px;
+    }
+
+    .club-title span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .gmap {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .logo {
+        display: none;
+    }
+    
+    .logo-sm {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .navbar-brand img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .logo {
+        display: block;
+    }
+
+    .logo-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .media-body h3 {
+        margin-top: 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feature-wrap {
+        margin-bottom: 0px;
+    }
+
+    .testimonial-inner img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
