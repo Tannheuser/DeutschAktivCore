@@ -16,7 +16,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("about")]
         public IActionResult About()
         {
-            return NotFound("About not implemented yet");
+            return View();
         }
 
         [Route("contacts")]
