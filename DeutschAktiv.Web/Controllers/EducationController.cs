@@ -14,7 +14,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("clubs")]
         public IActionResult GetClubs()
         {
-            return NotFound();
+            return View("Clubs");
         }
 
         [Route("masters")]
