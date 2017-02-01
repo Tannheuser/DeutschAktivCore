@@ -1,0 +1,59 @@
+﻿<section id="bottom">
+    <div class="container wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>О клубе</h3>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+                        <li><a asp-controller="Home" asp-action="About">О нас</a></li>
+                        @*<li><a href="#">Медиагалерея</a></li>*@
+                        <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Обучение</h3>
+                    <ul>
+                        <li><a asp-controller="Education" asp-action="GetClubs">Разговорные клубы</a></li>
+                        <li><a asp-controller="Education" asp-action="GetMasterClasses">Мастер-классы</a></li>
+                        <li><a asp-controller="Education" asp-action="GetCourses">Курсы</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Наши партнеры</h3>
+                    <ul>
+                        <li><a href="http://llclubs.ru/" target="_blank">Разговорные клубы Льва Лучко</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social">
+                        <ul class="social-share">
+                            <li>
+                                <a href="https://www.facebook.com/groups/deutschaktiv" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vk.com/deutschaktiv2015" target="_blank">
+                                    <i class="fa fa-vk"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/deutsch.aktiv/" target="_blank">
+                                <i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

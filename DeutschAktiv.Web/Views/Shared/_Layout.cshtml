@@ -36,10 +36,10 @@
 
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <menulink controller-name="Education" action-name="ListClubs" menu-text="Разговорные клубы"></menulink>
-                    <menulink controller-name="Education" action-name="ListMasterClasses" menu-text="Мастер-классы"></menulink>
-                    <menulink controller-name="Education" action-name="ListCourses" menu-text="Курсы"></menulink>
-                    <menulink controller-name="Education" action-name="ShowSchedule" menu-text="Расписание"></menulink>
+                    <menulink controller-name="Education" action-name="GetClubs" menu-text="Разговорные клубы"></menulink>
+                    <menulink controller-name="Education" action-name="GetMasterClasses" menu-text="Мастер-классы"></menulink>
+                    <menulink controller-name="Education" action-name="GetCourses" menu-text="Курсы"></menulink>
+                    <menulink controller-name="Education" action-name="GetSchedule" menu-text="Расписание"></menulink>
                     <menulink controller-name="Home" action-name="About" menu-text="О нас"></menulink>
                     <menulink controller-name="Home" action-name="Contacts" menu-text="Контакты"></menulink>
                 </ul>
@@ -59,8 +59,8 @@
             <div class="col-sm-6">
                 <ul class="pull-right">
                     <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
-                    <li><a asp-controller="Home" asp-action="Index">О нас</a></li>
-                    <li><a asp-controller="Home" asp-action="Index">Контакты</a></li>
+                    <li><a asp-controller="Home" asp-action="About">О нас</a></li>
+                    <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
                 </ul>
             </div>
         </div>
