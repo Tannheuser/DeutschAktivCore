@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    ViewBag.Title = "Контакты";
+    Layout = "_Layout";
+}
+
+<section id="contact-info">
+    <div class="center">
+        <h2>Как нас найти?</h2>
+        <p class="lead">Мы находимся в Столичном институте иностранных языков</p>
+    </div>
+    <div class="gmap-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 text-center">
+                    @Html.Partial("_Map")
+                </div>
+
+                <div class="col-sm-7 map-content">
+                    <ul class="row">
+                        <li class="col-sm-12 ">
+                            <address>
+                                <h5>Адрес</h5>
+                                <p>
+                                    г. Москва, ул. Мясницкая 7/11<br/>
+                                    метро Лубянка, Столичный институт иностранных языков
+                                </p>
+                            </address>
+
+                            <address>
+                                <h5>Как добраться</h5>
+                                <p>
+                                    Идите от метро прямо по Мясницкой улице, пройдите вдоль магазина "Библиоглобус", <br/>
+                                    при необходимости перейдите на светофоре к Милютинскому переулку, <br/>
+                                    следуйте до арки во двор слева от Высшей Школы Экономики. <br/>
+                                    Из арки поверните направо ко входу в Столичный институт иностранных языков.
+                                </p>
+                            </address>
+
+                            <address>
+                                <h5>Контакты</h5>
+                                <p>
+                                    Телефоны: 8 (903) 536 60 56, 8 (965) 240 59 50<br>
+                                    Email: deutschaktiv@@yandex.ru
+                                </p>
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@Html.Partial("_BottomLinks")

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace DeutschAktiv.Web.Controllers
 {
@@ -22,7 +20,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("contacts")]
         public IActionResult Contacts()
         {
-            return NotFound("COntacts not implemented yet");
+            return View();
         }
     }
 }
