@@ -8,7 +8,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("courses")]
         public IActionResult GetCourses()
         {
-            return NotFound();
+            return View("Courses");
         }
 
         [Route("clubs")]

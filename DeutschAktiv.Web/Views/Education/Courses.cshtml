@@ -1,0 +1,134 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewBag.Title = "Курсы немецкого языка";
+    Layout = "_Layout";
+}
+
+<section class="pricing-page">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Курсы немецкого языка</h2>
+            <p class="lead">При обучении на курсах посещение разгворных клубов бесплатно!</p>
+        </div>
+        <div class="pricing-area text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 plan price-level-low wow fadeInDown">
+                    <ul>
+                        <li class="level-low">
+                            <h1>A1 утро</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Среда<br/>Вторник - Четверг</li>
+                        <li>9:00-10:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3 plan price-level-low wow fadeInDown">
+                    <ul>
+                        <li class="level-low">
+                            <h1>A1 вечер</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Среда<br/>Вторник - Четверг</li>
+                        <li>19:00-20:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3 plan price-level-low wow fadeInDown">
+                    <ul>
+                        <li class="level-low">
+                            <h1>A2 утро</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Среда<br/>Вторник - Четверг</li>
+                        <li>9:00-10:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3 plan price-level-low wow fadeInDown">
+                    <ul>
+                        <li class="level-low">
+                            <h1>A2 вечер</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Среда<br/>Вторник - Четверг</li>
+                        <li>19:00-20:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-level-middle wow fadeInDown">
+                    <ul>
+                        <li class="level-middle">
+                            <h1>B1</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Четверг</li>
+                        <li>19:00-20:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-level-middle wow fadeInDown">
+                    <ul>
+                        <li class="level-middle">
+                            <h1>B2</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Четверг</li>
+                        <li>19:00-20:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-level-high wow fadeInDown">
+                    <ul>
+                        <li class="level-high">
+                            <h1>C1</h1>
+                            <span>6900 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Понедельник - Четверг</li>
+                        <li>19:00-20:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 plan price-level-custom wow fadeInDown"></div>
+                <div class="col-sm-4 plan price-level-custom wow fadeInDown">
+                    <ul>
+                        <li class="level-custom">
+                            <h1>Интенсивный</h1>
+                            <h2>(все уровни)</h2>
+                            <span>13300 <i class="fa fa-rub"></i></span>
+                        </li>
+                        <li>Суббота - Воскресенье</li>
+                        <li>12:00-15:30</li>
+                        <li class="plan-action">
+                            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 plan price-level-custom wow fadeInDown"></div>
+
+            </div>
+        </div><!--/pricing-area-->
+    </div><!--/container-->
+</section>
+@Html.Partial("_BottomLinks")
