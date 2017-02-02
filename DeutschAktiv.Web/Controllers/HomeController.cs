@@ -1,9 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace DeutschAktiv.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
         [Route("")]
         [Route("home")]
         public IActionResult Index()
