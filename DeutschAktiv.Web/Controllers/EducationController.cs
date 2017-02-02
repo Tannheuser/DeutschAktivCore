@@ -26,7 +26,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("schedule")]
         public IActionResult GetSchedule()
         {
-            return NotFound();
+            return View("Schedule");
         }
     }
 }
