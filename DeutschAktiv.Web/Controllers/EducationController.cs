@@ -20,7 +20,7 @@ namespace DeutschAktiv.Web.Controllers
         [Route("masters")]
         public IActionResult GetMasterClasses()
         {
-            return NotFound();
+            return View("MasterClasses");
         }
 
         [Route("schedule")]

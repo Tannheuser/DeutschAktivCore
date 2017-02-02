@@ -1,7 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
     ViewBag.Title = "Разговорные клубы";
     Layout = "_Layout";
-}
+}}
 
 <section class="pricing-page">
     <div class="container">
@@ -99,4 +100,4 @@
         </div>
     </div>
 </section>
-
+@Html.Partial("_BottomLinks")
