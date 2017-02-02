@@ -28,6 +28,8 @@ namespace DeutschAktiv.Web
 
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+            app.UseStatusCodePagesWithRedirects("/error/{0}");
+
         }
     }
 }

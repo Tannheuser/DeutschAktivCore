@@ -22,5 +22,11 @@ namespace DeutschAktiv.Web.Controllers
         {
             return View();
         }
+
+        [Route("error/{code?}")]
+        public IActionResult Error(string code)
+        {
+            return code == "404" ? View("404") : View();
+        }
     }
 }

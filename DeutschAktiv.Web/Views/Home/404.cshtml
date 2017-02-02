@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewBag.Title = "Страница не найдена";
+    Layout = "_Layout";
+}
+
+<section id="error" class="container">
+    <div class="center wow fadeInDown">
+        <h1>404, Страница не найдена</h1>
+        <p>Похоже, что страница, которую вы ищите не существует</p>
+        <a class="btn btn-primary" asp-action="Index">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
+    </div>
+</section>
+
+@Html.Partial("_BottomLinks")
