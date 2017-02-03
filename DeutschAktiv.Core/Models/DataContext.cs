@@ -9,14 +9,15 @@ namespace DeutschAktiv.Core.Models
 
         public DbSet<Club> Clubs { get; set; }
 
-        public DataContext() {
-            var builder = new ConfigurationBuilder().AddJsonFile("config.json");
-            Configuration = builder.Build();
-        }
+//        public DataContext() {
+//            var builder = new ConfigurationBuilder().AddJsonFile("config.json");
+//            Configuration = builder.Build();
+//        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"]);
+            //optionsBuilder.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"]);
+            optionsBuilder.UseSqlite("Filename=./deutschaktiv.db");
             base.OnConfiguring(optionsBuilder);
         }
     }
