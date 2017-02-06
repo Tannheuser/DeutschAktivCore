@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -24,6 +25,7 @@ namespace DeutschAktiv.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<DataSeeder>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
 //            services.AddDbContext<DataContext>(
@@ -32,7 +34,7 @@ namespace DeutschAktiv.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, DataSeeder seeder)
         {
             loggerFactory.AddConsole(LogLevel.Information).AddDebug();
 
@@ -44,6 +46,8 @@ namespace DeutschAktiv.Web
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
             app.UseStatusCodePagesWithRedirects("/error/{0}");
+            app.ApplicationServices.GetService<DataContext>().Database.Migrate();
+            seeder.Seed();
 
         }
     }
