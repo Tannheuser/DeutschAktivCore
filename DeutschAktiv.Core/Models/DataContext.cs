@@ -8,6 +8,8 @@ namespace DeutschAktiv.Core.Models
         public IConfigurationRoot Configuration { get; set; }
 
         public DbSet<Club> Clubs { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<ScheduleItem> Schedule { get; set; }
 
 //        public DataContext() {
 //            var builder = new ConfigurationBuilder().AddJsonFile("config.json");
