@@ -1,0 +1,7 @@
+{
+    "Data": {
+        "DefaultConnection": {
+            "ConnectionString": "User ID=xxijfassspopos;Password=okg63Fo_vnZWXTTuHJvlIwiVAL;Host=ec2-54-75-237-218.eu-west-1.compute.amazonaws.com;Port=5432;Database=d2fo87pg8agrng;Pooling=true;"
+        }
+    }
+}
