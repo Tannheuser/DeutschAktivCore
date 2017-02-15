@@ -1,4 +1,6 @@
-﻿using DeutschAktiv.Core.Models;
+﻿using AutoMapper;
+using DeutschAktiv.Core.Models;
+using DeutschAktiv.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -25,7 +27,9 @@ namespace DeutschAktiv.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddAutoMapper();
             services.AddTransient<DataSeeder>();
+            services.AddScoped<ClubService>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
 //            services.AddDbContext<DataContext>(

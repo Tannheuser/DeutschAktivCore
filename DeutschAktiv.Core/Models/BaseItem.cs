@@ -12,8 +12,8 @@ namespace DeutschAktiv.Core.Models
 
         public BaseItem()
         {
-            Created = DateTime.Now,
-            Modified = DateTime.Now,
+            Created = DateTime.Now;
+            Modified = DateTime.Now;
         }
     }
 }

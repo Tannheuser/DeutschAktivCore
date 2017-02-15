@@ -1,4 +1,7 @@
-﻿
+﻿@using System.Collections.Generic
+@using DeutschAktiv.Web.ViewModels
+@model IEnumerable<ClubDto>
+
 @{
     ViewBag.Title = "Главная";
     Layout = "_Layout";
@@ -176,7 +179,11 @@
         </div>
 
         <div class="row">
-@*            clubTile(clubs)*@
+            @foreach (var club in Model)
+            {
+                <h4>@club.Title</h4>
+            }
+            @*            clubTile(clubs)*@
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#services-->
