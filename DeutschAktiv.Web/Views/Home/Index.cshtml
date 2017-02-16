@@ -179,11 +179,7 @@
         </div>
 
         <div class="row">
-            @foreach (var club in Model)
-            {
-                <h4>@club.Title</h4>
-            }
-            @*            clubTile(clubs)*@
+           @await Component.InvokeAsync("ClubTiles", null)
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#services-->
