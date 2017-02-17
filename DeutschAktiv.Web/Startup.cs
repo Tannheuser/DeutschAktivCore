@@ -31,6 +31,7 @@ namespace DeutschAktiv.Web
             services.AddAutoMapper();
             services.AddTransient<DataSeeder>();
             services.AddScoped<ClubService>();
+            services.AddScoped<CourseService>();
             services.AddScoped<IClubService, ClubService>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();

@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using DeutschAktiv.Web.Services;
 using DeutschAktiv.Web.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
@@ -8,17 +9,20 @@ namespace DeutschAktiv.Web.Controllers
 {
     public class EducationController : Controller
     {
-        protected readonly IClubService _clubService;
+        private readonly IClubService _clubService;
+        private readonly CourseService _courseService;
 
-        public EducationController(IClubService clubService)
+        public EducationController(IClubService clubService, CourseService courseService)
         {
             _clubService = clubService;
+            _courseService = courseService;
         }
 
         [Route("courses")]
-        public IActionResult GetCourses()
+        public async Task<IActionResult> GetCourses()
         {
-            return View("Courses");
+            var courses = await _courseService.GetAllAsync();
+            return View("Courses", courses);
         }
 
         [Route("clubs")]

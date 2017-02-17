@@ -9,6 +9,7 @@ namespace DeutschAktiv.Web.Mappings
         public MappingProfile()
         {
             CreateMap<Club, ClubDto>();
+            CreateMap<Course, CourseDto>();
         }
     }
 }

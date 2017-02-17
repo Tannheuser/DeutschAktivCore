@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfbeb899-7584-44fd-a175-bb7836749e27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Constant/ClubType.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Models/Abstract/IPurchaseable.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Services/Abstract/IClubService.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/ClubDetails.cshtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClassDetails.cshtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Services/CourseService.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/CourseDto.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/EventDto.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/CourseDetails.cshtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.DeutschAktiv/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.DeutschAktiv/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Core/Migrations/DataContextModelSnapshot.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Migrations/DataContextModelSnapshot.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Core/Models/Club.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Models/Club.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Core/Models/DataSeeder.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Models/DataSeeder.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Core/Models/Event.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Core/Models/Event.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Services/ClubService.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Services/ClubService.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Clubs.cshtml" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Clubs.cshtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClasses.cshtml" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClasses.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Courses.cshtml" afterPath="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Courses.cshtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,161 +36,148 @@
       <file leaf-file-name="EducationController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
-                <marker date="1487333605757" expanded="true" signature="6:183" ph="..." />
-                <marker date="1487333605757" expanded="true" signature="223:1160" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="275:1158" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="397:457" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="527:583" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="661:782" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="870:1023" ph="{...}" />
-                <marker date="1487333605757" expanded="true" signature="1095:1152" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="6:216" ph="..." />
+                <marker date="1487346181372" expanded="true" signature="256:1402" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="308:1400" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="512:616" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="698:825" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="903:1024" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="1112:1265" ph="{...}" />
+                <marker date="1487346181372" expanded="true" signature="1337:1394" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clubs.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Clubs.cshtml">
+      <file leaf-file-name="ScheduleItem.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/ScheduleItem.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1487334254897" expanded="true" signature="7:76" ph="..." />
-                <marker date="1487334254897" expanded="true" signature="106:175" ph="@..." />
-                <marker date="1487334254897" expanded="true" signature="178:636" ph="&lt;section.../&gt;" />
-                <marker date="1487334254897" expanded="true" signature="213:625" ph="&lt;div.../&gt;" />
-                <marker date="1487334254897" expanded="true" signature="245:444" ph="&lt;div.../&gt;" />
-                <marker date="1487334254897" expanded="true" signature="453:614" ph="&lt;div.../&gt;" />
-                <marker date="1487334254897" expanded="true" signature="491:599" ph="@..." />
-                <marker date="1487334254897" expanded="true" signature="520:599" ph="{...}" />
+                <marker date="1487315605408" expanded="true" signature="49:232" ph="{...}" />
+                <marker date="1487315605408" expanded="true" signature="89:230" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClubDetails.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/ClubDetails.cshtml">
+      <file leaf-file-name="EventDto.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/EventDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <marker date="1487346181336" expanded="true" signature="37:254" ph="{...}" />
+                <marker date="1487346181336" expanded="true" signature="75:252" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Courses.cshtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Courses.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding>
+                <marker date="1487351925899" expanded="true" signature="7:76" ph="..." />
+                <marker date="1487351925899" expanded="true" signature="101:174" ph="@..." />
+                <marker date="1487351925899" expanded="true" signature="176:1207" ph="&lt;section.../&gt;" />
+                <marker date="1487351925899" expanded="true" signature="211:1179" ph="&lt;div.../&gt;" />
+                <marker date="1487351925899" expanded="true" signature="243:430" ph="&lt;div.../&gt;" />
+                <marker date="1487351925899" expanded="true" signature="439:1148" ph="&lt;div.../&gt;" />
+                <marker date="1487351925899" expanded="true" signature="490:1133" ph="&lt;div.../&gt;" />
+                <marker date="1487351925899" expanded="true" signature="524:1112" ph="@..." />
+                <marker date="1487351925899" expanded="true" signature="562:1112" ph="{...}" />
+                <marker date="1487351925899" expanded="true" signature="611:723" ph="{...}" />
+                <marker date="1487351925899" expanded="true" signature="748:851" ph="{...}" />
+                <marker date="1487351925899" expanded="true" signature="897:1033" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MappingProfile.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding>
+                <marker date="1487351755997" expanded="true" signature="6:84" ph="..." />
+                <marker date="1487351755997" expanded="true" signature="121:315" ph="{...}" />
+                <marker date="1487351755997" expanded="true" signature="165:313" ph="{...}" />
+                <marker date="1487351755997" expanded="true" signature="203:307" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_ViewImports.cshtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/_ViewImports.cshtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseService.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Services/CourseService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding>
-                <marker date="1487334794833" expanded="true" signature="51:673" ph="&lt;div.../&gt;" />
-                <marker date="1487334794833" expanded="true" signature="78:521" ph="&lt;div.../&gt;" />
-                <marker date="1487334794833" expanded="true" signature="243:510" ph="&lt;div.../&gt;" />
-                <marker date="1487334794833" expanded="true" signature="355:495" ph="&lt;div.../&gt;" />
-                <marker date="1487334794833" expanded="true" signature="526:666" ph="&lt;div.../&gt;" />
-                <marker date="1487334794833" expanded="true" signature="573:655" ph="&lt;div.../&gt;" />
+                <marker date="1487346181293" expanded="true" signature="6:406" ph="..." />
+                <marker date="1487346181293" expanded="true" signature="435:2358" ph="{...}" />
+                <marker date="1487346181293" expanded="true" signature="462:2356" ph="{...}" />
+                <marker date="1487346181293" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
+                <marker date="1487346181293" expanded="true" signature="1029:1657" ph="{...}" />
+                <marker date="1487346181293" expanded="true" signature="1476:1647" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
+                <marker date="1487346181293" expanded="true" signature="1894:2350" ph="{...}" />
+                <marker date="1487346181293" expanded="true" signature="2013:2090" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MasterClassDetails.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClassDetails.cshtml">
+      <file leaf-file-name="CourseDetails.cshtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/CourseDetails.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="171">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
-                <marker date="1487342675458" expanded="true" signature="51:272" ph="&lt;div.../&gt;" />
-                <marker date="1487342675458" expanded="true" signature="88:183" ph="&lt;div.../&gt;" />
-                <marker date="1487342675458" expanded="true" signature="188:265" ph="&lt;div.../&gt;" />
-                <marker date="1487342675458" expanded="true" signature="273:605" ph="&lt;div.../&gt;" />
-                <marker date="1487342675458" expanded="true" signature="310:450" ph="&lt;div.../&gt;" />
-                <marker date="1487342675458" expanded="true" signature="455:598" ph="&lt;div.../&gt;" />
+                <marker date="1487352009951" expanded="true" signature="53:520" ph="&lt;div.../&gt;" />
+                <marker date="1487352009951" expanded="true" signature="135:513" ph="&lt;ul.../&gt;" />
+                <marker date="1487352009951" expanded="true" signature="148:291" ph="&lt;li.../&gt;" />
+                <marker date="1487352009951" expanded="true" signature="367:503" ph="&lt;li.../&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClubDto.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs">
+      <file leaf-file-name="CourseDto.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/CourseDto.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="95">
+              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
               <folding>
-                <marker date="1487342675435" expanded="true" signature="37:445" ph="{...}" />
-                <marker date="1487342675435" expanded="true" signature="74:443" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasterClasses.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClasses.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-              <folding>
-                <marker date="1487342501385" expanded="true" signature="7:76" ph="..." />
-                <marker date="1487342501385" expanded="true" signature="105:170" ph="@..." />
-                <marker date="1487342501385" expanded="true" signature="172:570" ph="&lt;section.../&gt;" />
-                <marker date="1487342501385" expanded="true" signature="207:559" ph="&lt;div.../&gt;" />
-                <marker date="1487342501385" expanded="true" signature="239:423" ph="&lt;div.../&gt;" />
-                <marker date="1487342501385" expanded="true" signature="432:548" ph="@..." />
-                <marker date="1487342501385" expanded="true" signature="467:548" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/Event.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <marker date="1487342000696" expanded="true" signature="76:306" ph="{...}" />
-                <marker date="1487342000696" expanded="true" signature="127:304" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Club.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/Club.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <marker date="1487342000677" expanded="true" signature="6:74" ph="..." />
-                <marker date="1487342000677" expanded="true" signature="110:598" ph="{...}" />
-                <marker date="1487342000677" expanded="true" signature="184:596" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClubService.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Services/ClubService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="39" column="93" lean-forward="false" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
-              <folding>
-                <marker date="1487342811892" expanded="true" signature="6:280" ph="..." />
-                <marker date="1487342811892" expanded="true" signature="317:1538" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="391:1536" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="485:506" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="554:728" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="793:987" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="1043:1240" ph="{...}" />
-                <marker date="1487342811892" expanded="true" signature="1313:1530" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IClubService.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Services/Abstract/IClubService.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <marker date="1487326196586" expanded="true" signature="6:98" ph="..." />
-                <marker date="1487326196586" expanded="true" signature="144:396" ph="{...}" />
-                <marker date="1487326196586" expanded="true" signature="180:394" ph="{...}" />
+                <marker date="1487346181316" expanded="true" signature="37:181" ph="{...}" />
+                <marker date="1487346181316" expanded="true" signature="77:179" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -215,17 +195,14 @@
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/BaseDto.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Core/Models/BaseItem.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3a7357bf-f060-4a34-a840-2b6a1f6316ae/console.sql" />
-        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/ViewComponents/ClubTilesViewComponent.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Services/BaseService.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Shared/Components/ClubTiles/Default.cshtml" />
-        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Services/Abstract/IClubService.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Core/Constant/ClubTypes.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Core/Constant/ClubType.cs" />
-        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Clubs.cshtml" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/ClubDetails.cshtml" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Core/Models/Abstract/IPurchaseable.cs" />
@@ -236,6 +213,15 @@
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClassDetails.cshtml" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs" />
         <option value="$PROJECT_DIR$/DeutschAktiv.Web/Services/ClubService.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Core/Models/Course.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/CourseDto.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/EventDto.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Services/CoursesService.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Courses.cshtml" />
+        <option value="$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/CourseDetails.cshtml" />
       </list>
     </option>
   </component>
@@ -410,6 +396,24 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Mappings" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeutschAktiv (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeutschAktiv.Web" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
@@ -477,7 +481,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../UltraRacingAPI/UltraRacing.sln" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="SearchEverywhereHistoryKey" value="clubdt&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Web/ViewModels/ClubDto.cs&#10;see&#9;null&#9;null&#10;club&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Core/Models/Club.cs&#10;clubs&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Web/Views/Education/Clubs.cshtml&#10;seeder&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Core/Models/DataSeeder.cs&#10;seed&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sta&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Web/Startup.cs&#10;clubdt&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Web/ViewModels/ClubDto.cs&#10;see&#9;null&#9;null&#10;club&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Core/Models/Club.cs&#10;clubs&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Web/Views/Education/Clubs.cshtml&#10;seeder&#9;FILE&#9;file://C:/Projects/Net Core/DeutschAktivCore/DeutschAktiv.Core/Models/DataSeeder.cs&#10;seed&#9;null&#9;null" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
   <component name="RunManager" selected=".NET Project.Default">
@@ -539,7 +543,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23515000" />
+    <option name="totallyTimeSpent" value="27082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,15 +556,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5025" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.4975" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.168125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -602,14 +607,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487322042231" expanded="true" signature="6:406" ph="..." />
-            <marker date="1487322042231" expanded="true" signature="435:2309" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="462:2307" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
-            <marker date="1487322042231" expanded="true" signature="1029:1608" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1427:1598" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
-            <marker date="1487322042231" expanded="true" signature="1845:2301" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1964:2041" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="6:406" ph="..." />
+            <marker date="1487346181293" expanded="true" signature="435:2358" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="462:2356" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
+            <marker date="1487346181293" expanded="true" signature="1029:1657" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="1476:1647" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
+            <marker date="1487346181293" expanded="true" signature="1894:2350" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="2013:2090" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -619,14 +624,14 @@
         <state relative-caret-position="252">
           <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding>
-            <marker date="1487322042231" expanded="true" signature="6:406" ph="..." />
-            <marker date="1487322042231" expanded="true" signature="435:2309" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="462:2307" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
-            <marker date="1487322042231" expanded="true" signature="1029:1608" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1427:1598" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
-            <marker date="1487322042231" expanded="true" signature="1845:2301" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1964:2041" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="6:406" ph="..." />
+            <marker date="1487346181293" expanded="true" signature="435:2358" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="462:2356" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
+            <marker date="1487346181293" expanded="true" signature="1029:1657" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="1476:1647" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
+            <marker date="1487346181293" expanded="true" signature="1894:2350" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="2013:2090" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -635,13 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/BaseDto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -661,13 +659,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/b58e5123/3a7357bf-f060-4a34-a840-2b6a1f6316ae/Clubs" />
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/38896FC9-A452-434B-A5B8-8B4FF4FEAD3D/2c/66baff83/Controller.cs" />
     <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -694,23 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-          <folding>
-            <marker date="1487322042231" expanded="true" signature="6:406" ph="..." />
-            <marker date="1487322042231" expanded="true" signature="435:2309" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="462:2307" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
-            <marker date="1487322042231" expanded="true" signature="1029:1608" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1427:1598" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
-            <marker date="1487322042231" expanded="true" signature="1845:2301" ph="{...}" />
-            <marker date="1487322042231" expanded="true" signature="1964:2041" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,17 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/Event.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1487342000696" expanded="true" signature="76:306" ph="{...}" />
-            <marker date="1487342000696" expanded="true" signature="127:304" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/MasterClasses.cshtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -897,17 +860,6 @@
             <marker date="1487342501385" expanded="true" signature="239:423" ph="&lt;div.../&gt;" />
             <marker date="1487342501385" expanded="true" signature="432:548" ph="@..." />
             <marker date="1487342501385" expanded="true" signature="467:548" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <marker date="1487342675435" expanded="true" signature="37:445" ph="{...}" />
-            <marker date="1487342675435" expanded="true" signature="74:443" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -942,23 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1487333605757" expanded="true" signature="6:183" ph="..." />
-            <marker date="1487333605757" expanded="true" signature="223:1160" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="275:1158" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="397:457" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="527:583" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="661:782" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="870:1023" ph="{...}" />
-            <marker date="1487333605757" expanded="true" signature="1095:1152" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Services/ClubService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -972,6 +907,194 @@
             <marker date="1487342811892" expanded="true" signature="793:987" ph="{...}" />
             <marker date="1487342811892" expanded="true" signature="1043:1240" ph="{...}" />
             <marker date="1487342811892" expanded="true" signature="1313:1530" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Migrations/20170217111418_AddClubType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1487330058160" expanded="true" signature="6:95" ph="..." />
+            <marker date="1487330058160" expanded="true" signature="135:661" ph="{...}" />
+            <marker date="1487330058160" expanded="true" signature="186:659" ph="{...}" />
+            <marker date="1487330058160" expanded="true" signature="262:456" ph="{...}" />
+            <marker date="1487330058160" expanded="true" signature="529:653" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/BaseDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487316454728" expanded="true" signature="37:156" ph="{...}" />
+            <marker date="1487316454728" expanded="true" signature="64:154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/Course.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1487315605377" expanded="true" signature="34:124" ph="{...}" />
+            <marker date="1487315605377" expanded="true" signature="68:122" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/Event.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <marker date="1487342000696" expanded="true" signature="76:306" ph="{...}" />
+            <marker date="1487342000696" expanded="true" signature="127:304" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/ClubDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <marker date="1487342675435" expanded="true" signature="37:445" ph="{...}" />
+            <marker date="1487342675435" expanded="true" signature="74:443" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/CourseDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <marker date="1487346181316" expanded="true" signature="37:181" ph="{...}" />
+            <marker date="1487346181316" expanded="true" signature="77:179" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Core/Models/ScheduleItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487315605408" expanded="true" signature="49:232" ph="{...}" />
+            <marker date="1487315605408" expanded="true" signature="89:230" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/ViewModels/EventDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <marker date="1487346181336" expanded="true" signature="37:254" ph="{...}" />
+            <marker date="1487346181336" expanded="true" signature="75:252" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Services/CourseService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding>
+            <marker date="1487346181293" expanded="true" signature="6:406" ph="..." />
+            <marker date="1487346181293" expanded="true" signature="435:2358" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="462:2356" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="532:962" ph="/* public Startup() ... */" />
+            <marker date="1487346181293" expanded="true" signature="1029:1657" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="1476:1647" ph="/* services.AddDbContext&lt;DataContext&gt;( ... */" />
+            <marker date="1487346181293" expanded="true" signature="1894:2350" ph="{...}" />
+            <marker date="1487346181293" expanded="true" signature="2013:2090" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Controllers/EducationController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <marker date="1487346181372" expanded="true" signature="6:216" ph="..." />
+            <marker date="1487346181372" expanded="true" signature="256:1402" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="308:1400" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="512:616" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="698:825" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="903:1024" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="1112:1265" ph="{...}" />
+            <marker date="1487346181372" expanded="true" signature="1337:1394" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/_ViewImports.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Mappings/MappingProfile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <marker date="1487351755997" expanded="true" signature="6:84" ph="..." />
+            <marker date="1487351755997" expanded="true" signature="121:315" ph="{...}" />
+            <marker date="1487351755997" expanded="true" signature="165:313" ph="{...}" />
+            <marker date="1487351755997" expanded="true" signature="203:307" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/Courses.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <marker date="1487351925899" expanded="true" signature="7:76" ph="..." />
+            <marker date="1487351925899" expanded="true" signature="101:174" ph="@..." />
+            <marker date="1487351925899" expanded="true" signature="176:1207" ph="&lt;section.../&gt;" />
+            <marker date="1487351925899" expanded="true" signature="211:1179" ph="&lt;div.../&gt;" />
+            <marker date="1487351925899" expanded="true" signature="243:430" ph="&lt;div.../&gt;" />
+            <marker date="1487351925899" expanded="true" signature="439:1148" ph="&lt;div.../&gt;" />
+            <marker date="1487351925899" expanded="true" signature="490:1133" ph="&lt;div.../&gt;" />
+            <marker date="1487351925899" expanded="true" signature="524:1112" ph="@..." />
+            <marker date="1487351925899" expanded="true" signature="562:1112" ph="{...}" />
+            <marker date="1487351925899" expanded="true" signature="611:723" ph="{...}" />
+            <marker date="1487351925899" expanded="true" signature="748:851" ph="{...}" />
+            <marker date="1487351925899" expanded="true" signature="897:1033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeutschAktiv.Web/Views/Education/CourseDetails.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <marker date="1487352009951" expanded="true" signature="53:520" ph="&lt;div.../&gt;" />
+            <marker date="1487352009951" expanded="true" signature="135:513" ph="&lt;ul.../&gt;" />
+            <marker date="1487352009951" expanded="true" signature="148:291" ph="&lt;li.../&gt;" />
+            <marker date="1487352009951" expanded="true" signature="367:503" ph="&lt;li.../&gt;" />
           </folding>
         </state>
       </provider>
