@@ -9,5 +9,6 @@
         public string Action { get; set; }
         public string ImageUrl { get; set; }
         public string IconClass { get; set; }
+        public int Price { get; set; }
     }
 }
