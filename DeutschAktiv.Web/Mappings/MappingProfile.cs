@@ -10,6 +10,7 @@ namespace DeutschAktiv.Web.Mappings
         {
             CreateMap<Club, ClubDto>();
             CreateMap<Course, CourseDto>();
+            CreateMap<ScheduleItem, ScheduleItemDto>();
         }
     }
 }

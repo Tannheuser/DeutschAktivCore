@@ -223,30 +223,6 @@ namespace DeutschAktiv.Core.Models
                         Price = 350,
                         Place = "Лубянка",
                         Teacher = "носитель",
-                        Date = new DateTime(2017, 2, 10),
-                        Enabled = true
-                    },
-                    new ScheduleItem
-                    {
-                        Title = "Разговорный клуб",
-                        Subtitle = "все уровни",
-                        Day = "каждую пятницу",
-                        Time = "19:00 - 21:00",
-                        Price = 350,
-                        Place = "Лубянка",
-                        Teacher = "носитель",
-                        Date = new DateTime(2017, 2, 17),
-                        Enabled = true
-                    },
-                    new ScheduleItem
-                    {
-                        Title = "Разговорный клуб",
-                        Subtitle = "все уровни",
-                        Day = "каждую пятницу",
-                        Time = "19:00 - 21:00",
-                        Price = 350,
-                        Place = "Лубянка",
-                        Teacher = "носитель",
                         Date = new DateTime(2017, 2, 24),
                         Enabled = true
                     },
@@ -264,14 +240,50 @@ namespace DeutschAktiv.Core.Models
                     },
                     new ScheduleItem
                     {
-                        Title = "Мастер-класс",
+                        Title = "Разговорный клуб",
                         Subtitle = "все уровни",
-                        Day = "каждую вторую субботу",
-                        Time = "15:00 - 17:00",
-                        Price = 700,
+                        Day = "каждую пятницу",
+                        Time = "19:00 - 21:00",
+                        Price = 350,
                         Place = "Лубянка",
-                        Teacher = "русскоязычный преподаватель",
-                        Date = new DateTime(2017, 2, 11),
+                        Teacher = "носитель",
+                        Date = new DateTime(2017, 3, 10),
+                        Enabled = true
+                    },
+                    new ScheduleItem
+                    {
+                        Title = "Разговорный клуб",
+                        Subtitle = "все уровни",
+                        Day = "каждую пятницу",
+                        Time = "19:00 - 21:00",
+                        Price = 350,
+                        Place = "Лубянка",
+                        Teacher = "носитель",
+                        Date = new DateTime(2017, 3, 17),
+                        Enabled = true
+                    },
+                    new ScheduleItem
+                    {
+                        Title = "Разговорный клуб",
+                        Subtitle = "все уровни",
+                        Day = "каждую пятницу",
+                        Time = "19:00 - 21:00",
+                        Price = 350,
+                        Place = "Лубянка",
+                        Teacher = "носитель",
+                        Date = new DateTime(2017, 3, 24),
+                        Enabled = true
+                    },
+                    new ScheduleItem
+                    {
+                        Title = "Разговорный клуб",
+                        Subtitle = "все уровни",
+                        Day = "каждую пятницу",
+                        Time = "19:00 - 21:00",
+                        Price = 350,
+                        Place = "Лубянка",
+                        Teacher = "носитель",
+                        Date = new DateTime(2017, 3, 31),
                         Enabled = true
                     },
                     new ScheduleItem
@@ -283,7 +295,19 @@ namespace DeutschAktiv.Core.Models
                         Price = 700,
                         Place = "Лубянка",
                         Teacher = "русскоязычный преподаватель",
-                        Date = new DateTime(2017, 2, 25),
+                        Date = new DateTime(2017, 4, 8),
+                        Enabled = true
+                    },
+                    new ScheduleItem
+                    {
+                        Title = "Мастер-класс",
+                        Subtitle = "все уровни",
+                        Day = "каждую вторую субботу",
+                        Time = "15:00 - 17:00",
+                        Price = 700,
+                        Place = "Лубянка",
+                        Teacher = "русскоязычный преподаватель",
+                        Date = new DateTime(2017, 4, 22),
                         Enabled = true
                     },
                     new ScheduleItem
@@ -309,8 +333,22 @@ namespace DeutschAktiv.Core.Models
                         Teacher = "русскоязычный преподаватель",
                         Date = new DateTime(2017, 3, 25),
                         Enabled = true
+                    },
+                    new ScheduleItem
+                    {
+                        Title = "Мастер-класс",
+                        Subtitle = "все уровни",
+                        Day = "каждую вторую субботу",
+                        Time = "15:00 - 17:00",
+                        Price = 700,
+                        Place = "Лубянка",
+                        Teacher = "русскоязычный преподаватель",
+                        Date = new DateTime(2017, 2, 25),
+                        Enabled = true
                     }
                 );
+
+                _context.SaveChanges();
             }
         }
     }

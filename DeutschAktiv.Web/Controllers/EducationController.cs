@@ -1,21 +1,22 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using DeutschAktiv.Web.Services;
 using DeutschAktiv.Web.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace DeutschAktiv.Web.Controllers
 {
     public class EducationController : Controller
     {
         private readonly IClubService _clubService;
+        private readonly IScheduleService _scheduleService;
         private readonly CourseService _courseService;
 
-        public EducationController(IClubService clubService, CourseService courseService)
+        public EducationController(IClubService clubService, CourseService courseService, IScheduleService scheduleService)
         {
             _clubService = clubService;
             _courseService = courseService;
+            _scheduleService = scheduleService;
         }
 
         [Route("courses")]
@@ -40,9 +41,10 @@ namespace DeutschAktiv.Web.Controllers
         }
 
         [Route("schedule")]
-        public IActionResult GetSchedule()
+        public async Task<IActionResult> GetSchedule()
         {
-            return View("Schedule");
+            var schedule = await _scheduleService.GetCurrentAsync();
+            return View("Schedule", schedule.OrderBy(s => s.Date));
         }
     }
 }

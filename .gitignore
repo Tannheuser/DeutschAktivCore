@@ -23,7 +23,8 @@ bld/
 [Oo]bj/
 
 #Rider
-.idea/
+.idea/*
+.DS_Store
 
 # Visual Studio 2015 cache/options directory
 .vs/

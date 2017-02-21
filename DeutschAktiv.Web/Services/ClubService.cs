@@ -19,26 +19,26 @@ namespace DeutschAktiv.Web.Services
 
         public IEnumerable<ClubDto> GetClubs()
         {
-            var clubs = Context.Clubs.Where(c => c.Type == ClubType.Club);
-            return Mapper.Map<IEnumerable<Club>, IEnumerable<ClubDto>>(clubs);
+            var clubs = Context.Clubs.Where(c => c.Enabled && c.Type == ClubType.Club);
+            return MapToViewModel(clubs);
         }
 
         public async Task<IEnumerable<ClubDto>> GetClubsAsync()
         {
-            var clubs = await Context.Clubs.Where(c => c.Type == ClubType.Club).ToListAsync();
-            return Mapper.Map<IEnumerable<Club>, IEnumerable<ClubDto>>(clubs);
+            var clubs = await Context.Clubs.Where(c => c.Enabled && c.Type == ClubType.Club).ToListAsync();
+            return MapToViewModel(clubs);
         }
 
         public IEnumerable<ClubDto> GetMasterClasses()
         {
-            var masterClasses = Context.Clubs.Where(c => c.Type == ClubType.MasterClass);
-            return Mapper.Map<IEnumerable<Club>, IEnumerable<ClubDto>>(masterClasses);
+            var masterClasses = Context.Clubs.Where(c => c.Enabled && c.Type == ClubType.MasterClass);
+            return MapToViewModel(masterClasses);
         }
 
         public async Task<IEnumerable<ClubDto>> GetMasterClassesAsync()
         {
-            var masterClasses = await Context.Clubs.Where(c => c.Type == ClubType.MasterClass).ToListAsync();
-            return Mapper.Map<IEnumerable<Club>, IEnumerable<ClubDto>>(masterClasses);
+            var masterClasses = await Context.Clubs.Where(c => c.Enabled && c.Type == ClubType.MasterClass).ToListAsync();
+            return MapToViewModel(masterClasses);
         }
     }
 }

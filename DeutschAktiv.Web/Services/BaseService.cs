@@ -18,15 +18,20 @@ namespace DeutschAktiv.Web.Services
             Context = context;
         }
 
+        protected IEnumerable<Vm> MapToViewModel(IEnumerable<M> model)
+        {
+            return Mapper.Map<IEnumerable<M>, IEnumerable<Vm>>(model);
+        }
+
         public IEnumerable<Vm> GetAll()
         {
-            return Mapper.Map<IEnumerable<M>, IEnumerable<Vm>>(Context.Set<M>());
+            return MapToViewModel(Context.Set<M>());
         }
 
         public async Task<IEnumerable<Vm>> GetAllAsync()
         {
             var model = await Context.Set<M>().ToListAsync();
-            return Mapper.Map<IEnumerable<M>, IEnumerable<Vm>>(model);
+            return MapToViewModel(model);
         }
     }
 }

@@ -33,6 +33,7 @@ namespace DeutschAktiv.Web
             services.AddScoped<ClubService>();
             services.AddScoped<CourseService>();
             services.AddScoped<IClubService, ClubService>();
+            services.AddScoped<IScheduleService, ScheduleService>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
 //            services.AddDbContext<DataContext>(
