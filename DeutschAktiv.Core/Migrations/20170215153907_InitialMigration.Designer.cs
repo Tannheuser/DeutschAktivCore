@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using DeutschAktiv.Core.Models;
-using DeutschAktiv.Core.Constant;
 
 namespace DeutschAktiv.Core.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20170215153907_InitialMigration")]
+    partial class InitialMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752");
@@ -37,15 +37,11 @@ namespace DeutschAktiv.Core.Migrations
 
                     b.Property<DateTime>("Modified");
 
-                    b.Property<int>("Price");
-
                     b.Property<string>("Subtitle");
 
                     b.Property<string>("Summary");
 
                     b.Property<string>("Title");
-
-                    b.Property<int>("Type");
 
                     b.HasKey("Id");
 

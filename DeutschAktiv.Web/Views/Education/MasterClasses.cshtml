@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@using DeutschAktiv.Web.ViewModels
+@model IEnumerable<ClubDto>
 @{
     ViewBag.Title = "Мастер-классы";
     Layout = "_Layout";
@@ -10,33 +12,10 @@
             <h2>Мастер-классы</h2>
             <p class="lead">Deutsch Aktiv представляет новый формат встреч на немецком языке</p>
         </div>
-        <div class="row wow fadeInDown">
-            <div class="col-sm-4 column">
-                <img src="~/img/clubs/masterbw.jpg" alt="Мастер-класс">
-            </div>
-            <div class="col-sm-8 column">
-                <p>
-                    Мы проводим Мастер-классы по актуальным темам для всех, кто связан с немецким языком!
-                </p>
-                <p>
-                    Теперь каждую вторую СУББОТУ с 15.00 до 17.00 мы приглашаем Вас на двухчасовой мастер-класс по определенной теме - от тем по грамматике до бизнес-тренингов на немецком языке!
-                    Дополнительно во время кофе-паузы у Вас есть возможность пообщаться с ведущим мастер-класса и участниками в неформальной обстановке.
-                    Также предусмотрены дополнительные 30 минут после семинара для ответов модератора на вопросы участников.
-                </p>
-                <p>
-                    Ведущими мастер-классов являются профессионалы своего дела из разных стран, как носители немецкого языка из Германии, Австрии, так и специалисты в сфере немецкого языка из России.
-                    Мастер-класс - это отличная возможность не только улучшить свои знания языка по определенной теме, но и найти единомышленников и новых друзей!
-                </p>
-            </div>
-        </div>
-        <div class="row wow fadeInDown">
-            <div class="col-sm-4 price-master text-center">
-                <h2>Стоимость мастер-класса - 700 <i class="fa fa-rub"></i></h2>
-            </div>
-            <div class="col-sm-4">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Contacts">Записаться на мастер-класс</a>
-            </div>
-        </div>
+        @foreach (var masterClass in Model)
+        {
+            @Html.Partial("MasterClassDetails", masterClass)
+        }
     </div>
 </section>
 @Html.Partial("_BottomLinks")

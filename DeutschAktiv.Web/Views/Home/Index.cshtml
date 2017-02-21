@@ -1,4 +1,7 @@
-﻿
+﻿@using System.Collections.Generic
+@using DeutschAktiv.Web.ViewModels
+@model IEnumerable<ClubDto>
+
 @{
     ViewBag.Title = "Главная";
     Layout = "_Layout";
@@ -176,7 +179,7 @@
         </div>
 
         <div class="row">
-@*            clubTile(clubs)*@
+           @await Component.InvokeAsync("ClubTiles", null)
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#services-->

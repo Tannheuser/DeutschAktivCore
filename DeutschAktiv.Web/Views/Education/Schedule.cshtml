@@ -1,4 +1,7 @@
-﻿@using Microsoft.AspNetCore.Mvc.Rendering
+﻿@using System.Collections.Generic
+@using DeutschAktiv.Web.ViewModels
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model IEnumerable<ScheduleItemDto>
 @{
     ViewBag.Title = "Расписание мероприятий";
     Layout = "_Layout";
@@ -10,7 +13,10 @@
             <h2>Расписание мероприятий</h2>
             <p class="lead">Выбирайте лучшие решения для изучения немецкого языка</p>
         </div>
-
+        @foreach (var scheduleItem in @Model)
+        {
+            @Html.Partial("ScheduleItem", scheduleItem)
+        }
     </div><!--/.container-->
 </section><!--/#services-->
 @Html.Partial("_BottomLinks")

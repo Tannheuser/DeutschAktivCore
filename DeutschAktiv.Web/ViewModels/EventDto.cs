@@ -1,8 +1,6 @@
-﻿using DeutschAktiv.Core.Models.Abstract;
-
-namespace DeutschAktiv.Core.Models
+﻿namespace DeutschAktiv.Web.ViewModels
 {
-    public class Event : BaseItem, IPurchaseable
+    public class EventDto : BaseDto
     {
         public string Subtitle { get; set; }
         public string Day { get; set; }

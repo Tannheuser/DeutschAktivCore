@@ -1,32 +1,50 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
+﻿using System.Linq;
+using System.Threading.Tasks;
+using DeutschAktiv.Web.Services;
+using DeutschAktiv.Web.Services.Abstract;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DeutschAktiv.Web.Controllers
 {
     public class EducationController : Controller
     {
-        [Route("courses")]
-        public IActionResult GetCourses()
+        private readonly IClubService _clubService;
+        private readonly IScheduleService _scheduleService;
+        private readonly CourseService _courseService;
+
+        public EducationController(IClubService clubService, CourseService courseService, IScheduleService scheduleService)
         {
-            return View("Courses");
+            _clubService = clubService;
+            _courseService = courseService;
+            _scheduleService = scheduleService;
+        }
+
+        [Route("courses")]
+        public async Task<IActionResult> GetCourses()
+        {
+            var courses = await _courseService.GetAllAsync();
+            return View("Courses", courses);
         }
 
         [Route("clubs")]
-        public IActionResult GetClubs()
+        public async Task<IActionResult> GetClubs()
         {
-            return View("Clubs");
+            var clubs = await _clubService.GetClubsAsync();
+            return View("Clubs", clubs);
         }
 
         [Route("masters")]
-        public IActionResult GetMasterClasses()
+        public async Task<IActionResult> GetMasterClasses()
         {
-            return View("MasterClasses");
+            var masterClasses = await _clubService.GetMasterClassesAsync();
+            return View("MasterClasses", masterClasses);
         }
 
         [Route("schedule")]
-        public IActionResult GetSchedule()
+        public async Task<IActionResult> GetSchedule()
         {
-            return View("Schedule");
+            var schedule = await _scheduleService.GetCurrentAsync();
+            return View("Schedule", schedule.OrderBy(s => s.Date));
         }
     }
 }

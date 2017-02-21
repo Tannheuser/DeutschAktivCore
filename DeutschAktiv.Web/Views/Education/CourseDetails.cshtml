@@ -1,0 +1,16 @@
+﻿@using DeutschAktiv.Web.ViewModels
+@model CourseDto
+
+<div class="@Model.ColumnClass plan price-level-@Model.Level wow fadeInDown">
+    <ul>
+        <li class="level-@Model.Level">
+            <h1>@Model.Title</h1>
+            <span>@Model.Price <i class="fa fa-rub"></i></span>
+        </li>
+        <li>@Html.Raw(Model.Day)</li>
+        <li>@Model.Time</li>
+        <li class="plan-action">
+            <a asp-controller="Home" asp-action="Contacts" class="btn btn-primary">Записаться</a>
+        </li>
+    </ul>
+</div>
