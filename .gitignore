@@ -25,6 +25,7 @@ bld/
 #Rider
 .idea/*
 .DS_Store
+workspace.xml
 
 # Visual Studio 2015 cache/options directory
 .vs/
