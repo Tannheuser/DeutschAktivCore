@@ -1,0 +1,27 @@
+﻿@using DeutschAktiv.Web.ViewModels
+@model AccountDto
+
+@{
+    ViewBag.Title = "Войти";
+    Layout = "_Layout";
+}
+
+
+<div class="container">
+    <form asp-action="Login" asp-controller="Account"  asp-anti-forgery="true">
+        <div>
+            <div>
+                <label asp-for="UserName"></label>
+                <input type="text" asp-for="UserName" />
+            </div>
+
+            <div>
+                <label asp-for="Password"></label>
+                <input type="text" asp-for="Password" />
+            </div>
+            <div>
+                <input type="submit" value="Login" />
+            </div>
+        </div>
+    </form>
+</div>
