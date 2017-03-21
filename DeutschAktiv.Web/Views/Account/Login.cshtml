@@ -3,25 +3,19 @@
 
 @{
     ViewBag.Title = "Войти";
-    Layout = "_Layout";
+    Layout = "_LayoutEmpty";
 }
 
 
 <div class="container">
-    <form asp-action="Login" asp-controller="Account"  asp-anti-forgery="true">
-        <div>
-            <div>
-                <label asp-for="UserName"></label>
-                <input type="text" asp-for="UserName" />
-            </div>
+    <form class="form-signin" asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+        <img class="logo center-block" src="~/img/logo2.png" alt="logo" asp-append-version="true">
+        <h2 class="form-signin-heading center">Вход в систему</h2>
+        <label asp-for="UserName" class="sr-only"></label>
+        <input type="text" asp-for="UserName" class="form-control" placeholder="Введите имя">
+        <label asp-for="Password" class="sr-only"></label>
+        <input type="password" asp-for="Password" class="form-control" placeholder="Введите пароль">
 
-            <div>
-                <label asp-for="Password"></label>
-                <input type="text" asp-for="Password" />
-            </div>
-            <div>
-                <input type="submit" value="Login" />
-            </div>
-        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
     </form>
 </div>
