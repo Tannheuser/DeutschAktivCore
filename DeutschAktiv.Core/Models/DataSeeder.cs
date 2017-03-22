@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Claims;
 using DeutschAktiv.Core.Constant;
+using Microsoft.AspNetCore.Identity;
 
 namespace DeutschAktiv.Core.Models
 {
     public class DataSeeder
     {
         private readonly DataContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public DataSeeder(DataContext context)
+        public DataSeeder(DataContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public void Seed()
@@ -18,6 +22,26 @@ namespace DeutschAktiv.Core.Models
             SeedClubs();
             SeedCourses();
             SeedSchedule();
+            SeedUsers();
+        }
+
+        private void SeedUsers()
+        {
+            var user = _userManager.FindByNameAsync("admin");
+            user.Wait();
+
+            if (user.Result == null)
+            {
+                var admin = new ApplicationUser
+                {
+                    UserName = "admin"
+                };
+
+                _userManager.CreateAsync(admin, "aXw52zg!").Wait();
+                _userManager.AddClaimAsync(admin, new Claim("CanUpdate", "true")).Wait();
+                _userManager.AddClaimAsync(admin, new Claim("CanDelete", "true")).Wait();
+
+            }
         }
 
         private void SeedClubs()

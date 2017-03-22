@@ -4,6 +4,8 @@ using DeutschAktiv.Web.Services;
 using DeutschAktiv.Web.Services.Abstract;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -30,12 +32,14 @@ namespace DeutschAktiv.Web
             services.AddMvc();
             services.AddAutoMapper();
             services.AddTransient<DataSeeder>();
+            services.AddScoped<SignInManager<ApplicationUser>>();
             services.AddScoped<ClubService>();
             services.AddScoped<CourseService>();
             services.AddScoped<IClubService, ClubService>();
             services.AddScoped<IScheduleService, ScheduleService>();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<DataContext>();
 //            services.AddDbContext<DataContext>(
 //                options => options.UseNpgsql(Configuration["Data:DefaultConnection:ConnectionString"])
 //            );
@@ -51,6 +55,7 @@ namespace DeutschAktiv.Web
 //                app.UseDeveloperExceptionPage();
 //            }
 
+            app.UseIdentity();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
             app.UseStatusCodePagesWithRedirects("/error/{0}");

@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace DeutschAktiv.Core.Models
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<ApplicationUser>
     {
         public IConfigurationRoot Configuration { get; set; }
 
