@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using DeutschAktiv.Core.Models;
 using DeutschAktiv.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -25,15 +26,21 @@ namespace DeutschAktiv.Web.Controllers
             return View();
         }
 
-        [HttpPost]
         [Route("login")]
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(AccountDto account)
         {
-            _logger.LogWarning(account.UserName);
-            var status = await _signInManager.PasswordSignInAsync(account.UserName, account.Password, false, false);
-            if (status == SignInResult.Success)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "Home", new { area = "" });
+                var status = await _signInManager.PasswordSignInAsync(account.UserName, account.Password, false, false);
+                if (status == SignInResult.Success)
+                {
+                    return RedirectToAction("Index", "Home", new {area = ""});
+                }
+
+                ModelState.AddModelError(string.Empty, "Неверное имя пользователя или пароль");
             }
 
             return View(account);
