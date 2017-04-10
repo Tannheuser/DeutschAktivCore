@@ -272,6 +272,14 @@ ul.social-share li a {
 
 /*--Schedule--*/
 
+.error-list {
+    margin-top: 40px;
+}
+
+.error-list .center {
+    padding-bottom: 0;
+}
+
 @media screen and (max-width: 1200px) {
     .gmap-area .map-content {
         margin-top: 20px;
