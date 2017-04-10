@@ -1,42 +1,31 @@
 ﻿{
-    "version": "1.0.0-*",
-    "tooling": {
-        "defaultNamespace": "DeutschAktiv.Core",
-        "dotnet-ef": "1.1.0"
-    },
-    "buildOptions": {
-        "debugType": "portable",
-        // Uncomment to enable migrations
-        "emitEntryPoint": true
-    },
-    "dependencies": {
-        "Microsoft.Extensions.DependencyInjection": "1.1.0",
-        "Microsoft.Extensions.Configuration.Json": "1.1.0",
-        "Microsoft.EntityFrameworkCore": "1.1.0",
-        "Microsoft.EntityFrameworkCore.Design": "1.1.0",
-        "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
-        //"Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0",
-        "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final",
-        "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
-        "Microsoft.NETCore.App": {
-            "version": "1.1.0",
-            "type": "platform"
-        }
-
-        // "Microsoft.DataAnnotations": "1.0.0-*"
-    },
-    "tools": {
-        "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
-    },
-    "frameworks": {
-        "netcoreapp1.1": {
-            // Uncomment to enable migrations
-            // "dependencies":{
-            //   "Microsoft.NETCore.App": {
-            //     "version": "1.1.0",
-            //     "type": "platform"
-            //   }
-            // }
-        }
+  "version": "1.0.0-*",
+  "tooling": {
+    "defaultNamespace": "DeutschAktiv.Core",
+    "dotnet-ef": "1.1.0"
+  },
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "MailKit": "1.14.0",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
+    "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final",
+    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "Microsoft.Extensions.DependencyInjection": "1.1.0",
+    "Microsoft.NETCore.App": {
+      "version": "1.1.0",
+      "type": "platform"
     }
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
+  },
+  "frameworks": {
+    "netcoreapp1.1": {}
+  }
 }
